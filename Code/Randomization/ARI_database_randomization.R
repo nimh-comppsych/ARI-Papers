@@ -12,8 +12,8 @@ rand_ari_database <- ari_database[sample(nrow(ari_database), 25), ]
 
 # Remove values in Type column
 for (row in 1:nrow(rand_ari_database)) {
-  rand_ari_database[row,'Type (primary)'] <- NA
-  rand_ari_database[row, 'Type (secondary)'] <- NA
+  rand_ari_database[row,'Type_Primary'] <- NA
+  rand_ari_database[row, 'Type_Secondary'] <- NA
 }
 
 # Write out random papers to excel
